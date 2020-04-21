@@ -46,27 +46,6 @@ int calcTree( pNode tree ){
     return 32767;
 }
 
-/*void addToTree( pNode &tree , int data ){
-    if(!tree){
-        tree = new node;
-        tree->right = nullptr;
-        tree->left = nullptr;
-        tree->key = data;
-        return;
-    }
-    if( data < tree->key )
-        addToTree(tree->left , data);
-    else
-        addToTree(tree->right , data);
-}
-
-pNode search (pNode tree, int what){
-    if(!tree) return nullptr;
-    if(what == tree->key) return tree;
-    if(what < tree->key) return search(tree->left , what);
-    else return search(tree->right , what);
-}
-*/
 int priority( char c ){
     switch(c){
         case '+':case '-':return 1;
@@ -102,3 +81,24 @@ void printLPK( pNode tree ) {
     printLPK(tree->right);
     cout << tree->key << ' ';
 }
+/*void addToTree( pNode &tree , int data ){
+    if(!tree){
+        tree = new node;
+        tree->right = nullptr;
+        tree->left = nullptr;
+        tree->key = data;
+        return;
+    }
+    if( data < tree->key )
+        addToTree(tree->left , data);
+    else
+        addToTree(tree->right , data);
+}
+
+pNode search (pNode tree, int what){
+    if(!tree) return nullptr;
+    if(what == tree->key) return tree;
+    if(what < tree->key) return search(tree->left , what);
+    else return search(tree->right , what);
+}
+*/

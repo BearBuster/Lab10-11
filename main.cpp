@@ -7,12 +7,5 @@ int main() {
     cout << data;
     tree = makeTree(data , 0 , n);
     cout << '=' << calcTree(tree) << endl;
-    /*printLKP(tree);
-    cout << endl;
-    printKLP(tree);
-    cout << endl;
-    printLPK(tree);
-    cout << endl;
-    printPKL(tree);*/
     return 0;
 }

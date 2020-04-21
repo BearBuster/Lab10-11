@@ -10,12 +10,12 @@ struct node{
 typedef node *pNode;
 
 pNode makeTree( char[] , int , int );
-/*void addToTree( pNode& , int );
-pNode search ( pNode , int );*/
 int priority( char );
 int calcTree( pNode );
 void printKLP( pNode );
 void printPKL( pNode );
 void printLPK( pNode );
 void printLKP( pNode );
+/*void addToTree( pNode& , int );
+pNode search ( pNode , int );*/
 #endif
